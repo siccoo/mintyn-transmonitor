@@ -30,7 +30,11 @@ module.exports = {
         Roboto: ['Roboto', 'sans-serif'],
         SegoeUI: ['Segoe UI', 'sans-serif'],
       },
-      extend: {},
+      extend: {
+        backgroundImage: {
+            'graph': "url('../src/assets/images/big-graph.svg')",
+          },
+      },
     },
     plugins: [require('tailwind-scrollbar-hide'), require('tailwind-scrollbar')],
   };
