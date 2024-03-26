@@ -23,7 +23,7 @@ const Sidebar = () => {
               }`}
             >
               <div
-                className={`flex gap-8 cursor-pointer p-2 ml-1.5 items-center ${
+                className={`flex gap-8 cursor-pointer p-2 ml-1.5 items-normal ${
                   main.route === selectedRoute
                     ? 'bg-[#afcdf3] text-navigationGrey'
                     : ''

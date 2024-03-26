@@ -47,7 +47,7 @@ const Header = () => {
           <input
             type='text'
             placeholder='Search....'
-            className='outline-none bg-transparent placeholder:font-medium p-2'
+            className='outline-none bg-transparent placeholder: p-2'
             onChange={(e) => {
               setSearchInput(e.target.value);
             }}
@@ -70,7 +70,7 @@ const Header = () => {
         <div className='self-center cursor-pointer relative'>
           <img src={Bell} alt='a notification bell' />
           {notifications > 0 ? (
-            <span className='notification'>{notifications}</span>
+            <span className='notification -top-0.5 bottom-0.75 right-0.5'>{notifications}</span>
           ) : (
             ''
           )}
