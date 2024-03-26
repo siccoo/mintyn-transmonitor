@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Sidebar from './Sidebar';
 import { CloseSquare, HambergerMenu } from 'iconsax-react'; 
-import { headerData } from './../data/SidebarData'; 
+import { headerData } from '../routesData/SidebarData'; 
 import { Bell, Avatar, Search } from '../assets/icons/'; 
 
 const Header = () => {

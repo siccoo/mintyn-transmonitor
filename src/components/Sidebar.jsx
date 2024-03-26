@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { mainData, paymentsData, ordersData } from './../data/SidebarData';
+import { mainData, paymentsData, ordersData } from '../routesData/SidebarData';
 import { MerchantProfile } from '../assets/icons';
 import { Link } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const Sidebar = () => {
               }`}
             >
               <div
-                className={`flex gap-8 cursor-pointer p-4 items-center ${
+                className={`flex gap-8 cursor-pointer p-2 ml-1.5 items-center ${
                   main.route === selectedRoute
                     ? 'bg-[#afcdf3] text-navigationGrey'
                     : ''
@@ -50,7 +50,7 @@ const Sidebar = () => {
               }`}
             >
               <div
-                className={`flex gap-8 cursor-pointer p-4 items-center ${
+                className={`flex gap-8 cursor-pointer p-2 ml-1.5 items-center ${
                   payment.route === selectedRoute
                     ? 'bg-[#afcdf3] text-navigationGrey'
                     : ''
@@ -77,7 +77,7 @@ const Sidebar = () => {
               }`}
             >
               <div
-                className={`flex gap-8 cursor-pointer p-4 items-center ${
+                className={`flex gap-8 cursor-pointer p-2 ml-1.5 items-center ${
                   order.route === selectedRoute
                     ? 'bg-[#afcdf3] text-navigationGrey'
                     : ''
