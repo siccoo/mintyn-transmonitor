@@ -17,6 +17,7 @@ import { getUser } from '../slices/userSlice';
 import StatsCard from '../components/StatsCard';
 import SmallChart from '../assets/images/small-chart.svg';
 import GraphDisplay from '../components/GraphDisplay';
+import Payments from '../components/Payments';
 
 const Overview = () => {
   const dailyTransactionVolume = useSelector(
@@ -90,6 +91,7 @@ const Overview = () => {
         />
       </section>
       <GraphDisplay />
+      <Payments />
     </section>
   );
 };
