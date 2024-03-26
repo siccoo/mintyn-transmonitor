@@ -2,4 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@font-face {
+  font-family: "Segoe UI";
+  src: local("SEGOEUI") url(./assets/font/SEGOEUI.TTF) format("truetype");
+}
 
+@layer base {
+  html {
+    @apply font-SegoeUI;
+  }
+  th {
+    @apply px-4 py-4;
+  }
+  td {
+    @apply px-4 pb-2 pt-8;
+  }
+}
+
+@layer components {
+  .notification {
+    @apply absolute -top-1 -right-1 grid place-content-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-blue rounded-full;
+  }
+  .card {
+    @apply bg-white text-dark font-medium text-sm px-4 py-8;
+  }
+}
+option:hover {
+  background-color: green !important;
+}
+option {
+  color: #414042 !important;
+}
