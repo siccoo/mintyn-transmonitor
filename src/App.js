@@ -1,12 +1,16 @@
-import React from 'react';
-import Layout from './components/Layout';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
 
-const App = () => {
-  return (
-    <div>
-      <Layout />
-    </div>
-  )
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [],
+  },
+]);
+function App() {
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

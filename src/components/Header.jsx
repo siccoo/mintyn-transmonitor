@@ -34,7 +34,7 @@ const Header = () => {
   };
 
   return (
-    <header className='px-6 bg-white text-navigationGrey shadow-lg md:px-12 flex justify-between items-center font-SegoeUI py-1 sticky'>
+    <header className='px-6 bg-white text-navigationGrey shadow-lg md:px-12 flex justify-between items-center font-SegoeUI py-0.5 sticky'>
       <div className='flex gap-4 items-center'>
         <a
           href='/'
