@@ -30,7 +30,7 @@ const Payments = () => {
   if (filterValue !== '') {
     currentItems = currentItems.filter((item) => {
       const value = filterValue.toLowerCase();
-      if (value === 'all') {
+      if (value === 'All') {
         return item.status.toLowerCase();
       }
       return item.status.toLowerCase() === value;
