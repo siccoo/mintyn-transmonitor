@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   user: [],
-  notifications: 3,
+  notifications: 8,
 };
 
 export const userSlice = createSlice({
